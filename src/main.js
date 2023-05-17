@@ -135,10 +135,17 @@ scene("game", ({}) => {
 
 scene("rules", ({}) => {
   add([
+    text("Present Clicker", {
+      width: width() - pad * 2,
+      size: 100,
+    }),
+    pos(24, 24),
+  ])
+  add([
     text("It is your birthday today.\nTry to catch as many presents as you can!", {
       width: width() - pad * 2,
     }),
-    pos(24, 24),
+    pos(24, 130),
   ])
   onClick(() => {
     go("game", {})
