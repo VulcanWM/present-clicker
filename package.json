@@ -1,8 +1,8 @@
 {
 	"name": "KaboomTypescriptTemplate",
 	"scripts": {
-		"build": "esbuild --bundle src/main.ts --outfile=www/main.js",
-		"dev": "esbuild --bundle src/main.ts --outfile=www/main.js --servedir=www",
+		"build": "esbuild --bundle src/main.js --outfile=www/main.js",
+		"dev": "esbuild --bundle src/main.js --outfile=www/main.js --servedir=www",
 		"zip": "npm run build && mkdir -p dist && zip -r dist/game.zip www -x \"**/.DS_Store\"",
 		"check": "tsc"
 	},
