@@ -53,11 +53,11 @@ scene("game", ({}) => {
   ])
   
   const timer = add([
-    text("Time: 60 seconds", {
+    text("Time: 20 seconds", {
       width: width() - pad * 2,
     }),
     pos(48, 80),
-    { value: 60 },
+    { value: 20 },
   ])
 
   add([
@@ -142,7 +142,7 @@ scene("rules", ({}) => {
     pos(24, 24),
   ])
   add([
-    text("It is your birthday today.\nTry to catch as many presents as you can!", {
+    text("It is your birthday today.\nTry to catch as many presents as you can in 20 seconds!", {
       width: width() - pad * 2,
     }),
     pos(24, 130),
